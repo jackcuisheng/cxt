@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:layout_margin="10dp"
+    android:background="@drawable/view_bg"
+    >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:text="@string/item_car_control_carNum"
+                android:textStyle="bold"
+                android:textColor="@color/black_90"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/tv_carNum"
+                android:layout_width="0dp"
+                android:layout_weight="8"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginHorizontal="10dp"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/item_car_control_name"
+                android:textStyle="bold"
+                android:textColor="@color/black_90"
+                android:textSize="16sp"
+                />
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="0dp"
+                android:layout_weight="8"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginHorizontal="10dp"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="15dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingHorizontal="10dp">
+
+            <Button
+                android:id="@+id/btn_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginRight="60dp"
+                android:background="@drawable/view_bg"
+                android:backgroundTint="@color/btn_red"
+                android:textColor="@color/white"
+                android:text="@string/item_car_control_cancel" />
+
+
+            <Button
+                android:id="@+id/btn_search"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_below="@+id/name"
+                android:layout_toEndOf="@+id/linearLayout"
+                android:background="@drawable/view_bg"
+                android:backgroundTint="@color/btn_orange"
+                android:textColor="@color/white"
+                android:text="@string/item_car_control_search" />
+        </LinearLayout>
+
+</LinearLayout>

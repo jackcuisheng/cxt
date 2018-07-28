@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        >
+        <TextView
+            android:id="@+id/tv_deviceID"
+            android:layout_width="0dp"
+            android:layout_height="33dp"
+            android:layout_weight="2.5"
+            android:gravity="center"
+            android:text="设备ID"
+            android:background="@drawable/textview_no_top_right_border"
+            android:textAlignment="center"
+            />
+
+        <TextView
+            android:id="@+id/tv_type"
+            android:layout_width="0dp"
+            android:layout_height="33dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="类型"
+            android:background="@drawable/textview_no_top_bottom_border"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/tv_state"
+            android:layout_width="0dp"
+            android:layout_height="33dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="状态"
+            android:background="@drawable/textview_no_top_bottom_border"
+            android:textAlignment="center" />
+
+        <ImageView
+            android:layout_gravity="center_vertical"
+            android:id="@+id/iv_setting"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/textview_no_top_bottom_border"
+            android:textAlignment="center"
+            android:src="@drawable/setting_unable"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>

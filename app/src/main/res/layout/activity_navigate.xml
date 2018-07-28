@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <include
+        layout="@layout/layout_top"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <LinearLayout
+                android:id="@+id/route_map_choose"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:background="@drawable/view_bg"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:onClick="onDriveClick" >
+
+                    <ImageView
+                        android:id="@+id/route_drive"
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center"
+                        android:src="@drawable/route_drive_normal"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:onClick="onBusClick" >
+
+                    <ImageView
+                        android:id="@+id/route_bus"
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:src="@drawable/route_bus_normal" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:onClick="onWalkClick" >
+
+                    <ImageView
+                        android:id="@+id/route_walk"
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:src="@drawable/route_walk_normal" />
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+     <com.amap.api.maps.MapView
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+</LinearLayout>

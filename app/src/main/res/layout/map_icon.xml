@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+
+        <LinearLayout
+            android:id="@+id/ll_wifi"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_marginHorizontal="10dp"
+            android:orientation="horizontal" >
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@mipmap/wifi_1"
+                />
+        </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginVertical="5dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginHorizontal="10dp"
+        >
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@mipmap/detail_1"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_navigate"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginVertical="5dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginHorizontal="10dp"
+
+        >
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@mipmap/navigate_1"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_device_list"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginVertical="5dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginHorizontal="10dp"
+
+        >
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@mipmap/device_1"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_hotpoint"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginVertical="5dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginHorizontal="10dp"
+        >
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@mipmap/point_1"
+            />
+    </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_hot_image"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginVertical="5dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginHorizontal="10dp"
+            >
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@mipmap/hot_1"
+                />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/ll_history_router"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginVertical="5dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginHorizontal="10dp"
+            >
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@mipmap/route_1"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_fence"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginHorizontal="10dp"
+            >
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@mipmap/fence_1"
+                />
+        </LinearLayout>
+
+
+</LinearLayout>

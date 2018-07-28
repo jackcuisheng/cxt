@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/top_layout_car_num"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+        <com.amap.api.maps.MapView
+            android:id="@+id/map"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:id="@+id/tv_notice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginVertical="10dp"
+            android:background="@color/white"
+            android:text="@string/notice"
+            android:textAlignment="center"
+            android:textColor="@color/black_90"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:visibility="gone"
+            />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="vertical"
+        android:background="@mipmap/common_bg_white"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+                <RelativeLayout
+                    android:id="@+id/rl_play_rewind_fast"
+                    android:layout_width="45.0dip"
+                    android:layout_height="match_parent"
+                    android:clickable="true"
+                    >
+                    <ImageView
+                        android:id="@+id/iv_fast_forward"
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:layout_above="@+id/iv_rewind"
+                        android:layout_centerHorizontal="true"
+                        android:clickable="true"
+                        android:src="@drawable/vehicle_fast_forward_normal"
+                        android:visibility="gone"
+                        />
+                    <ImageView
+                        android:id="@+id/iv_play_pause"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_alignParentBottom="true"
+                        android:background="@drawable/vehicle_play_normal"
+                        android:clickable="true"
+                        android:layout_marginBottom="5dp"/>
+                    <ImageView
+                        android:id="@id/iv_rewind"
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:layout_centerInParent="true"
+                        android:layout_marginVertical="8dp"
+                        android:clickable="true"
+                        android:src="@drawable/vehicle_rewind_nomal"
+                        android:visibility="gone"
+                        />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="8"
+                android:orientation="vertical"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    >
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="14dp"
+                        android:layout_marginHorizontal="15dp"
+                        android:gravity="center_vertical"
+                        >
+
+                        <TextView
+                            android:id="@+id/tv_start_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="00-00 00:00"
+                            android:textColor="@color/black_90"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/tv_end_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:text="00-00 00:00"
+                            android:textColor="@color/black_90"
+                            android:textSize="12sp" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@mipmap/common_bg_white"
+                    >
+
+                    <SeekBar
+                        android:id="@+id/skBarTrackPlay"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginHorizontal="10dp"
+                        android:maxHeight="10px"
+                        android:minHeight="10px"
+                        android:paddingRight="10.0dip"
+                        android:progress="0"
+                        android:progressDrawable="@drawable/vehicle_seekbar_bg"
+                        android:thumb="@drawable/vehicle_slider_selector" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp">
+
+                <TextView
+                    android:id="@+id/tv_speed"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="--"
+                    android:textColor="@color/black_90"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_mileage"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="--"
+                    android:textColor="@color/black_90"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_oil"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="--"
+                    android:textColor="@color/black_90"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:layout_marginBottom="5dp">
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/speed"
+                    android:textColor="@color/black_90"
+                    android:textSize="10dp" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/mileage"
+                    android:textColor="@color/black_90"
+                    android:textSize="10dp" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/oil"
+                    android:textColor="@color/black_90"
+                    android:textSize="10dp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/vehicle_color_edeef0"
+            >
+            <LinearLayout
+                android:id="@+id/ll_date"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+
+                android:paddingBottom="5dp">
+
+                <LinearLayout
+                    android:id="@+id/ll_today"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/iv_today"
+                        android:layout_width="10dp"
+                        android:layout_height="6dp"
+                        android:background="@color/vehicle_color_edeef0" />
+
+                    <TextView
+                        android:id="@+id/tv_today"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="今天"
+                        android:textSize="14sp"
+                        android:textColor="@color/vehicle_color_a0a9b8" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_yesterday"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/iv_yesterday"
+                        android:layout_width="10dp"
+                        android:layout_height="6dp"
+                        android:background="@color/vehicle_color_edeef0" />
+
+                    <TextView
+                        android:id="@+id/tv_yesterday"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="昨天"
+                        android:textSize="14sp"
+                        android:textColor="@color/vehicle_color_a0a9b8" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_three_days_ago"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/iv_three_days_ago"
+                        android:layout_width="10dp"
+                        android:layout_height="6dp"
+                        android:background="@color/vehicle_color_edeef0" />
+
+                    <TextView
+                        android:id="@+id/tv_three_days_ago"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="前三天"
+                        android:textSize="14sp"
+                        android:textColor="@color/vehicle_color_a0a9b8" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

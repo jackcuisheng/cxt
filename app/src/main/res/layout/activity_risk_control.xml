@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <include layout="@layout/layout_top"/>
+    <SearchView
+        android:layout_marginHorizontal="10dp"
+        android:id="@+id/sv_query"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:queryHint="@string/search_car_hint"
+        android:iconifiedByDefault="false"
+        android:layout_marginVertical="10dp"
+        android:background="@drawable/et_bg"/>
+    <include
+        android:layout_marginHorizontal="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/tab_layout"
+        />
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            layout="@layout/refresh_list_layout"
+            />
+
+
+
+</LinearLayout>

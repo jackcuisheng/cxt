@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+  <include layout="@layout/layout_top"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="8"
+            >
+            <TextView
+                android:id="@+id/tv_notice"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/notice_text_color"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:text="@string/notice"
+                android:visibility="gone"
+                />
+            <ListView
+                android:id="@+id/lv_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:listSelector="@color/notice_text_color"
+                >
+
+            </ListView>
+        </FrameLayout>
+        <LinearLayout
+            android:id="@+id/ll_map"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5"
+            android:layout_gravity="bottom"
+            android:orientation="vertical"
+            >
+
+            <com.amap.api.maps.MapView
+                android:id="@+id/map"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                >
+
+            </com.amap.api.maps.MapView>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+   <include
+       layout="@layout/layout_top"
+       />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginVertical="20dp"
+        android:gravity="center_vertical"
+        >
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:textAlignment="center"
+            android:layout_height="wrap_content"
+            android:text="@string/old_pwd"
+            android:textSize="18sp"/>
+
+        <EditText
+            android:id="@+id/et_old_pwd"
+            android:layout_width="0dp"
+            android:layout_weight="8"
+            android:layout_height="35dp"
+            android:background="@drawable/view_bg"
+            android:inputType="textPassword"
+            android:layout_marginRight="10dp"
+            android:hint="@string/hint_pwd"
+            android:textSize="14sp"
+            android:paddingLeft="5dp"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginHorizontal="10dp"
+        android:gravity="center_vertical"
+        >
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:textAlignment="center"
+            android:layout_height="wrap_content"
+            android:text="@string/new_pwd"
+            android:textSize="18sp"/>
+
+        <EditText
+            android:id="@+id/et_new_pwd"
+            android:layout_width="0dp"
+            android:layout_weight="8"
+            android:layout_height="35dp"
+            android:background="@drawable/view_bg"
+            android:inputType="textPassword"
+            android:layout_marginRight="10dp"
+            android:paddingLeft="5dp"
+            android:hint="@string/input_newPwd"
+            android:textSize="14sp"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginVertical="20dp"
+        android:gravity="center_vertical"
+        >
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:textAlignment="center"
+            android:layout_height="wrap_content"
+            android:text="@string/confirm_pwd_"
+            android:textSize="18sp"/>
+
+        <EditText
+            android:id="@+id/et_confirm_pwd"
+            android:layout_width="0dp"
+            android:layout_weight="8"
+            android:layout_height="35dp"
+            android:background="@drawable/view_bg"
+            android:inputType="textPassword"
+            android:layout_marginRight="10dp"
+            android:paddingLeft="5dp"
+            android:textSize="14sp"
+            android:hint="@string/confirm_pwd"
+            />
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/view_bg"
+            android:backgroundTint="@color/top_layout"
+            android:text="@string/submit_ok"
+            android:layout_marginHorizontal="60dp"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>

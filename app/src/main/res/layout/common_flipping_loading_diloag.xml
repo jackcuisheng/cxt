@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/loadingdialog_bg" >
+
+    <ImageView
+        android:id="@+id/loadingdialog_fiv_icon"
+        android:layout_width="40dip"
+        android:layout_height="40dip"
+        android:layout_marginTop="15dip"
+        android:layout_marginBottom="15dip"
+        android:layout_marginLeft="35dip"
+        android:layout_marginRight="35dip"
+        android:background="@drawable/loading"/>
+
+    <com.cxt.gps.UI.view.HandyTextView
+        android:id="@+id/loadingdialog_htv_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="left|center"
+        android:textColor="@color/white"
+        android:layout_marginLeft="8dip"
+        android:layout_marginRight="8dip"
+        android:text="加载中..."
+        android:layout_marginBottom="20dip"
+        android:textSize="14sp" />
+
+</LinearLayout>

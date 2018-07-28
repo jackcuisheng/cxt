@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#80000000</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="light_grey">#efefef</color>
+    <color name="light_grey_90">#90efefef</color>
+    <color name="white">#FFFFFF</color>
+    <color name="top_layout">#0fadd6</color>
+    <color name="notice_text_color">#DCDCDC</color>
+    <color name="divide_color">#00000000</color>
+    <color name="black_90">#90000000</color>
+    <color name="btn_red">#FF4343</color>
+    <color name="btn_orange">#FB7e00</color>
+    <color name="act_background">#efefef</color>
+    <color name="phone_bg">#f6f6f6</color>
+    <color name="transparent">#00000000</color>
+    <color name="blue">#4c90f9</color>
+    <color name="purple">#de1e7c</color>
+    <color name="vehicle_color_a0a9b8">#ffa0a9b8</color>
+    <color name="vehicle_color_edeef0">#ffedeef0</color>
+    <color name="color_discovery_default_yellow">#fffebc09</color>
+    <color name="text_color">#ff434343</color>
+    <color name="login_before_color">#90727272</color>
+</resources>

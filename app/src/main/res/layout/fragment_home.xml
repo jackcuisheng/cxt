@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:background="@mipmap/top_icon"
+        >
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6.5"
+        android:background="@mipmap/index"
+        android:orientation="vertical"
+        android:gravity="bottom"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2.9"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+
+            <LinearLayout
+                android:id="@+id/ll_car_manage"
+                android:layout_width="0dp"
+                android:layout_weight="5"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                >
+                <ImageView
+                    android:id="@+id/car_manage"
+                    android:layout_width="100dp"
+                    android:layout_height="60dp"
+                    android:contentDescription="@string/car_manage"
+                    android:src="@mipmap/car_manage" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/car_manage" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ll_car_defend"
+                android:layout_width="0dp"
+                android:layout_weight="5"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                >
+
+                <ImageView
+                    android:paddingVertical="10dp"
+                    android:id="@+id/car_safe"
+                    android:layout_width="100dp"
+                    android:layout_height="60dp"
+                    android:contentDescription="@string/car_defend"
+                    android:src="@mipmap/car_defend" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/car_defend" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2.1"
+            >
+
+            <LinearLayout
+                android:id="@+id/ll_risk_control"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/risk_control"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:paddingVertical="5dp"
+                    android:contentDescription="@string/risk_control"
+                    android:src="@mipmap/risk_control" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/risk_control" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_collect_car"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/car_take"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:contentDescription="@string/collect_car"
+                    android:src="@mipmap/collect_car" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/collect_car" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_device_install"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/bt_car_take"
+                android:layout_toRightOf="@id/bt_car_take"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/device_install"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:contentDescription="@string/device_install"
+                    android:src="@mipmap/device_install" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/device_install" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_meter_search"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:layout_marginTop="10dp"
+        android:background="@mipmap/hundred_meter_search_car"
+        android:orientation="horizontal"
+        >
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

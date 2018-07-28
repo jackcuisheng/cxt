@@ -1,0 +1,39 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="BaseDialog" parent="@android:style/Theme.Dialog" />
+    <style name="Theme.Light.FullScreenDialogAct" parent="@style/BaseDialog">
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">#ff555555</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowSoftInputMode">adjustPan</item>
+    </style>
+    <!-- 细线 -->
+    <style name="Straight_Line_Divider">
+        <item name="android:background">#ffc0c3c4</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:layout_width">fill_parent</item>
+    </style>
+    <style name="Style_Dialog_Button">
+        <item name="android:textSize">16.0dip</item>
+        <item name="android:textColor">#ff425968</item>
+        <!--<item name="android:background">@drawable/btn_dialog_default</item>  -->
+        <item name="android:background">@color/white</item>
+        <item name="android:minHeight">40.0dip</item>
+    </style>
+    <style name="TextErrorAppearance">
+        <item name="android:textColor">@color/btn_red</item>
+    </style>
+</resources>

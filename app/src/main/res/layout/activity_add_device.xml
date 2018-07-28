@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/all"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    android:background="@color/white"
+    >
+   <include layout="@layout/layout_top"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginVertical="20dp"
+        android:layout_marginHorizontal="20dp"
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:text="@string/vin" />
+
+        <TextView
+            android:id="@+id/tv_vin"
+            android:layout_width="0dp"
+            android:layout_weight="9"
+            android:layout_height="35dp"
+            android:gravity="center_vertical"
+            android:ems="10"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginHorizontal="20dp"
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:text="@string/carNum" />
+
+        <TextView
+            android:id="@+id/tv_carNum"
+            android:layout_width="0dp"
+            android:layout_weight="9"
+            android:layout_height="35dp"
+            android:gravity="center_vertical"
+            android:ems="10" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="20dp"
+        android:gravity="center_vertical"
+        >
+        <EditText
+            android:id="@+id/et_deviceID"
+            android:layout_width="0dp"
+            android:layout_weight="9"
+            android:layout_height="35dp"
+            android:background="@drawable/et_bg"
+            android:ems="10"
+            android:hint="@string/add_device_hint"
+            android:inputType="number"
+            />
+
+        <ImageView
+            android:id="@+id/iv_scanner"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:src="@drawable/scanner" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/view_bg"
+        android:layout_marginHorizontal="20dp"
+
+        >
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/time" />
+
+                <TextView
+                    android:id="@+id/tv_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:textAlignment="center"
+                    android:ems="10"
+                    android:gravity="center_vertical"
+                    android:text="" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp"
+                >
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/status" />
+
+                <TextView
+                    android:id="@+id/tv_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:textAlignment="center"
+                    android:ems="10"
+                    android:text=""
+                    android:gravity="center_vertical"/>
+            </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginVertical="20dp"
+        android:layout_marginHorizontal="20dp"
+        android:gravity="center_vertical"
+        >
+        <TextView
+            android:id="@+id/tv_show_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text=""
+            />
+        <ImageView
+            android:layout_marginHorizontal="15dp"
+            android:id="@+id/iv_show_state_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        >
+
+     <!--   <Button
+            android:id="@+id/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:background="#21aee6"
+            android:textColor="@color/white"
+            android:text="取消" />-->
+
+        <!--<Button-->
+            <!--android:id="@+id/complete"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="40dp"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:layout_marginHorizontal="30dp"-->
+            <!--android:background="#21aee6"-->
+            <!--android:textColor="@color/white"-->
+
+            <!--android:text="完成" />-->
+
+        <Button
+            android:id="@+id/bt_next"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:background="@color/notice_text_color"
+            android:textColor="@color/white"
+            android:text="@string/next" />
+    </LinearLayout>
+
+
+
+</LinearLayout>

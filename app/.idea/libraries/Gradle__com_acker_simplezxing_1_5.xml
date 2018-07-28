@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.acker:simplezxing-1.5">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/simplezxing-1.5.aar/101c58abcfad2e0ac9c31a4b73c6a60b/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/simplezxing-1.5.aar/101c58abcfad2e0ac9c31a4b73c6a60b/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.acker/simplezxing/1.5/13eabaeab32e413dc6612ef6f3448cfbfda63763/simplezxing-1.5-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

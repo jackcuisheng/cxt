@@ -1,0 +1,97 @@
+apply plugin: 'com.android.application'
+apply plugin: 'realm-android'
+android {
+    compileSdkVersion 27
+    defaultConfig {
+        applicationId "com.cxt.gps"
+        minSdkVersion 18
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        ndk {
+            //设置支持的SO库架构（开发者可以根据需要，选择一个或多个平台的so）
+            //abiFilters "armeabi", "armeabi-v7a", "arm64-v8a", "x86","arm64-v8a","x86_64"
+            abiFilters  "armeabi-v7a", "arm64-v8a", "x86","arm64-v8a","x86_64"
+        }
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.2'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    //json解析
+    implementation 'com.alibaba:fastjson:1.1.54.android'
+
+    //日志记录
+    implementation 'com.jakewharton.timber:timber:4.1.0'
+
+    //网络通信
+    implementation 'com.mcxiaoke.volley:library:1.0.19'
+
+    // implementation 'com.squareup.retrofit2:retrofit:2.0.2'
+
+    //implementation 'com.squareup.retrofit2:converter-gson:2.0.2'
+
+    //implementation 'com.squareup.retrofit2:adapter-rxjava:2.0.0'
+
+    //图片加载
+    //implementation 'com.github.bumptech.glide:glide:3.7.0'
+
+    //异步测试框架
+
+    //implementation 'com.android.support.test.espresso:espresso-intents:3.0.1'
+
+    //谷歌Guava 项目包含若干被 Google 的 Java 项目依赖的核心类库，
+
+    // 例如：集合、缓存、原生类型支持、并发库、通用注解、字符串处理、I/O 等等。
+
+    // Google 的开发者们每天都在使用这些工具进行项目的开发。
+
+    //implementation 'com.google.guava:guava:23.0'
+
+    // or, for Android:
+    implementation 'com.google.guava:guava:23.0-android'
+
+    //刷新和加载框架
+    implementation 'com.scwang.smartrefresh:SmartRefreshLayout:1.0.3'
+
+    //3D地图so及jar和'com.amap.api:navi-3dmap:latest.integration'会冲突
+
+    //implementation 'com.amap.api:3dmap:latest.integration'
+
+    //定位功能
+    implementation 'com.amap.api:location:latest.integration'
+
+    // 搜索功能
+    implementation 'com.amap.api:search:latest.integration'
+
+    //导航
+    implementation 'com.amap.api:navi-3dmap:latest.integration'
+
+    //二维码识别
+    implementation 'com.acker:simplezxing:1.5'
+
+    //图片压缩框架
+    implementation 'com.github.nanchen2251:CompressHelper:1.0.5'
+
+    //引入
+
+    //implementation 'com.noober.light:core:1.1.0'
+
+    //功能全面，有多图选择+图片裁剪+图片压缩。压缩如果设置最大值的话，采用的而是循环压缩。
+
+    //implementation 'com.jph.takephoto:takephoto_library:4.0.3'
+
+}

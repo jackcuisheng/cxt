@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/refresh_load_list"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_notice"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/notice"
+            android:textColor="@color/notice_text_color"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:visibility="gone"
+            />
+            <ListView
+                android:id="@+id/lv_list"
+                android:layout_marginVertical="5dp"
+                android:layout_marginHorizontal="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@color/divide_color"
+                android:dividerHeight="2dp"
+                android:listSelector="@color/notice_text_color"
+                />
+</FrameLayout>
